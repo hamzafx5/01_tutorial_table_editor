@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Table editor</title>
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <script defer src="/index.js"></script>
+    </head>
+    <body>
+        <h1 class="title">Interactive table editor</h1>
+        <div class="container">
+            <div class="table-wrapper">
+                <button class="circle-button add-column" title="Add Column">
+                    +
+                </button>
+                <button class="circle-button add-row" title="Add Row">+</button>
+                <button
+                    id="delete-row"
+                    class="delete-btn point-right"
+                    title="Delete this row"
+                >
+                    <i class="bx bx-trash"></i>
+                </button>
+                <button
+                    id="delete-column"
+                    class="delete-btn point-bottom"
+                    title="Delete this Column"
+                >
+                    <i class="bx bx-trash"></i>
+                </button>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Location</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Bob Dylan</td>
+                            <td>Musician</td>
+                            <td>California, USA</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Eric Clapton</td>
+                            <td>Musician</td>
+                            <td>Ohio, USA</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Daniel Kahneman</td>
+                            <td>Psychologist</td>
+                            <td>California, USA</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

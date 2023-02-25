@@ -1,1 +1,1 @@
-# 01_tutorial_table_editor
+# A table editor with HTML/CSS/JS

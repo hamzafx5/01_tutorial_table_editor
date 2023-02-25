@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --accent: #1977e2;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    background-color: white;
+    letter-spacing: 0.02em;
+    font-family: Inter, sans-serif;
+}
+
+.title {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    font-size: 40px;
+    text-transform: capitalize;
+    background: linear-gradient(45deg, var(--accent), #1bffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container {
+    padding: 0 1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+button {
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    line-height: 1;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.delete-btn {
+    display: none;
+    position: absolute;
+    background-color: #ffd8d8;
+    font-size: 17px;
+    width: 26px;
+    height: 26px;
+    color: #e61919;
+    border-radius: 4px;
+    left: -31px;
+    top: 0;
+}
+
+.delete-btn.active {
+    display: initial;
+}
+
+.delete-btn.point-right::after,
+.delete-btn.point-bottom::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    border: 4px solid transparent;
+}
+
+.delete-btn.point-right::after {
+    right: -8px;
+    top: 9px;
+    border-left-color: #ffd8d8;
+}
+
+.delete-btn.point-bottom::after {
+    bottom: -8px;
+    left: 9px;
+    border-top-color: #ffd8d8;
+}
+
+.circle-button {
+    background-color: var(--accent);
+    color: white;
+    width: 24px;
+    height: 24px;
+    font-size: 18px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.table-wrapper {
+    position: relative;
+    max-width: 100%;
+}
+
+.add-column {
+    position: absolute;
+    right: -24px;
+    top: calc(20px - 12px);
+    border-radius: 0 50% 50% 0;
+}
+.add-row {
+    position: absolute;
+    bottom: -24px;
+    left: calc(50% - 12px);
+    border-radius: 0 0 50% 50%;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table th,
+.table td {
+    border: 1px solid #ddd;
+    padding: 8px 14px;
+}
+
+.table th:focus,
+.table td:focus {
+    outline: 1.5px solid #6998ce;
+    outline-offset: -1px;
+}
